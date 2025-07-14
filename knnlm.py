@@ -312,8 +312,13 @@ class KNNSaver(object):
         self.register_hook(final_layer, self.post_forward_hook)
 
         keys_vals_prefix = get_dstore_path(self.dstore_dir, model.config.model_type, self.dstore_size, self.dimension)
+        print(self.dstore_size)
+        print(self.dimension)
+        print(keys_vals_prefix)
         keys_filename = f'{keys_vals_prefix}_keys.npy'
+        print(keys_filename)
         vals_filename = f'{keys_vals_prefix}_vals.npy'
+        print(vals_filename)
         if os.path.exists(keys_filename) and os.path.exists(vals_filename):
             mode = 'r'
         else:
