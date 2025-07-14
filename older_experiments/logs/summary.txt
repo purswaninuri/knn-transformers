@@ -1,0 +1,77 @@
+Perplexity Scores
+==========================
+Dataset: wiki-103-v1
+
+Models: GPT2, GPT2-wiki-103-v1-finetuned
+
+Experiments: 
+
+1. GPT2 only
+
+***** eval metrics *****
+  eval_loss               =     3.2605
+  eval_runtime            = 0:00:09.53
+  eval_samples            =        480
+  eval_samples_per_second =     50.339
+  eval_steps_per_second   =      0.839
+  perplexity              =    26.0638
+
+2. GPT2 + knn (Default parameters)
+
+***** eval metrics *****
+  eval_loss                   =      3.426
+  eval_model_preparation_time =     0.0017
+  eval_runtime                = 0:00:17.24
+  eval_samples                =        480
+  eval_samples_per_second     =     27.829
+  eval_steps_per_second       =      3.479
+  perplexity                  =    30.7533
+
+3. GPT2 + Retomaton (Default parameters)
+
+***** eval metrics *****
+  eval_loss                   =     0.9404
+  eval_model_preparation_time =     0.0017
+  eval_runtime                = 0:02:00.67
+  eval_samples                =        480
+  eval_samples_per_second     =      3.978
+  eval_steps_per_second       =      0.497
+  lookups_saved               =        0.0
+  perplexity                  =     2.5611
+07/04/2025 02:34:12 - INFO - retomaton - Lookups saved: 0.0%
+
+4. GPT2 Finetuned 
+
+***** eval metrics *****
+  eval_loss                   =     2.6976
+  eval_model_preparation_time =     0.0013
+  eval_runtime                = 0:00:06.81
+  eval_samples                =        480
+  eval_samples_per_second     =     70.411
+  eval_steps_per_second       =      8.801
+  perplexity                  =    14.8437
+
+5. GPT2 Finetuned + knn
+
+***** eval metrics *****
+  eval_loss                   =     2.9223
+  eval_model_preparation_time =     0.0017
+  eval_runtime                = 0:00:17.11
+  eval_samples                =        480
+  eval_samples_per_second     =     28.051
+  eval_steps_per_second       =      3.506
+  perplexity                  =    18.5842
+
+
+6. GPT2 Finetuned + Retomaton
+
+***** eval metrics *****
+  eval_loss                   =     0.8088
+  eval_model_preparation_time =     0.0017
+  eval_runtime                = 0:02:02.42
+  eval_samples                =        480
+  eval_samples_per_second     =      3.921
+  eval_steps_per_second       =       0.49
+  lookups_saved               =        0.0
+  perplexity                  =     2.2452
+07/04/2025 03:08:41 - INFO - retomaton - Lookups saved: 0.0%
