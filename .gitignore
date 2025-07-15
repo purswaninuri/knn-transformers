@@ -1,3 +1,4 @@
 # Ignore specific datastore files (keep them locally)
 dstore_llama_121198980_2048_keys.npy
 dstore_llama_121198980_2048_vals.npy
+index_llama_121198980_2048.indexed

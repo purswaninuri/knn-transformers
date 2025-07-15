@@ -1,0 +1,281 @@
+nohup: ignoring input
+07/14/2025 05:21:07 - WARNING - __main__ - Process rank: 0, device: cuda:0, n_gpu: 1distributed training: True, 16-bits training: False
+07/14/2025 05:21:19 - WARNING - __main__ - The tokenizer picked seems to have a very large `model_max_length` (131072). Picking 1024 instead. You can change that default value by passing --block_size xxx.
+Grouping texts in chunks of 1024:   0%|          | 0/4358 [00:00<?, ? examples/s]
+  0%|          | 0/72704 [00:00<?, ?it/s][A  0%|          | 142/72704 [00:00<00:00, 74813.61it/s]
+Grouping texts in chunks of 1024:  23%|██▎       | 1000/4358 [00:00<00:00, 6230.29 examples/s]
+  0%|          | 0/67584 [00:00<?, ?it/s][A  0%|          | 132/67584 [00:00<00:00, 182903.25it/s]
+Grouping texts in chunks of 1024:  46%|████▌     | 2000/4358 [00:00<00:00, 6668.16 examples/s]
+  0%|          | 0/72704 [00:00<?, ?it/s][A  0%|          | 142/72704 [00:00<00:00, 100793.90it/s]
+Grouping texts in chunks of 1024:  69%|██████▉   | 3000/4358 [00:00<00:00, 6726.31 examples/s]
+  0%|          | 0/57344 [00:00<?, ?it/s][A  0%|          | 112/57344 [00:00<00:00, 102500.99it/s]
+Grouping texts in chunks of 1024:  92%|█████████▏| 4000/4358 [00:00<00:00, 7099.50 examples/s]
+  0%|          | 0/20480 [00:00<?, ?it/s][A  0%|          | 40/20480 [00:00<00:00, 37158.84it/s]
+Grouping texts in chunks of 1024: 100%|██████████| 4358/4358 [00:00<00:00, 7104.83 examples/s]
+Grouping texts in chunks of 1024:   0%|          | 0/3760 [00:00<?, ? examples/s]
+  0%|          | 0/56320 [00:00<?, ?it/s][A  0%|          | 110/56320 [00:00<00:00, 190650.18it/s]
+Grouping texts in chunks of 1024:  27%|██▋       | 1000/3760 [00:00<00:00, 8132.89 examples/s]
+  0%|          | 0/74752 [00:00<?, ?it/s][A  0%|          | 146/74752 [00:00<00:00, 123810.83it/s]
+Grouping texts in chunks of 1024:  53%|█████▎    | 2000/3760 [00:00<00:00, 6741.05 examples/s]
+  0%|          | 0/72704 [00:00<?, ?it/s][A  0%|          | 142/72704 [00:00<00:00, 108249.94it/s]
+Grouping texts in chunks of 1024:  80%|███████▉  | 3000/3760 [00:00<00:00, 6667.43 examples/s]
+  0%|          | 0/50176 [00:00<?, ?it/s][A  0%|          | 98/50176 [00:00<00:00, 191806.72it/s]
+Grouping texts in chunks of 1024: 100%|██████████| 3760/3760 [00:00<00:00, 6993.78 examples/s]
+/data/nuri/knn-transformers/run_clm.py:557: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Trainer.__init__`. Use `processing_class` instead.
+  trainer = Trainer(
+07/14/2025 05:21:22 - INFO - knnlm - keytype being saved: KEY_TYPE.last_ffn_input
+07/14/2025 05:21:22 - INFO - knnlm - Saving fp16
+07/14/2025 05:21:22 - INFO - knnlm - Building index
+07/14/2025 05:21:22 - INFO - knnlm - Training Index
+07/14/2025 06:26:17 - INFO - knnlm - Training took 3881.8925547599792 s
+07/14/2025 06:26:17 - INFO - knnlm - Adding Keys
+/home/nuri/.conda/envs/neubig/lib/python3.10/site-packages/faiss/contrib/torch_utils.py:51: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  x.storage().data_ptr() + x.storage_offset() * 4)
+07/14/2025 06:33:52 - INFO - knnlm - Added 1000000 tokens so far
+07/14/2025 06:33:52 - INFO - knnlm - Writing Index 1000000
+07/14/2025 06:40:59 - INFO - knnlm - Added 2000000 tokens so far
+07/14/2025 06:40:59 - INFO - knnlm - Writing Index 2000000
+07/14/2025 06:48:08 - INFO - knnlm - Added 3000000 tokens so far
+07/14/2025 06:48:08 - INFO - knnlm - Writing Index 3000000
+07/14/2025 06:55:56 - INFO - knnlm - Added 4000000 tokens so far
+07/14/2025 06:55:56 - INFO - knnlm - Writing Index 4000000
+07/14/2025 07:03:09 - INFO - knnlm - Added 5000000 tokens so far
+07/14/2025 07:03:09 - INFO - knnlm - Writing Index 5000000
+07/14/2025 07:10:44 - INFO - knnlm - Added 6000000 tokens so far
+07/14/2025 07:10:44 - INFO - knnlm - Writing Index 6000000
+07/14/2025 07:18:03 - INFO - knnlm - Added 7000000 tokens so far
+07/14/2025 07:18:03 - INFO - knnlm - Writing Index 7000000
+07/14/2025 07:25:10 - INFO - knnlm - Added 8000000 tokens so far
+07/14/2025 07:25:10 - INFO - knnlm - Writing Index 8000000
+07/14/2025 07:32:34 - INFO - knnlm - Added 9000000 tokens so far
+07/14/2025 07:32:34 - INFO - knnlm - Writing Index 9000000
+07/14/2025 07:39:51 - INFO - knnlm - Added 10000000 tokens so far
+07/14/2025 07:39:51 - INFO - knnlm - Writing Index 10000000
+07/14/2025 07:47:38 - INFO - knnlm - Added 11000000 tokens so far
+07/14/2025 07:47:38 - INFO - knnlm - Writing Index 11000000
+07/14/2025 07:54:43 - INFO - knnlm - Added 12000000 tokens so far
+07/14/2025 07:54:43 - INFO - knnlm - Writing Index 12000000
+07/14/2025 08:02:03 - INFO - knnlm - Added 13000000 tokens so far
+07/14/2025 08:02:03 - INFO - knnlm - Writing Index 13000000
+07/14/2025 08:09:07 - INFO - knnlm - Added 14000000 tokens so far
+07/14/2025 08:09:07 - INFO - knnlm - Writing Index 14000000
+07/14/2025 08:16:21 - INFO - knnlm - Added 15000000 tokens so far
+07/14/2025 08:16:21 - INFO - knnlm - Writing Index 15000000
+07/14/2025 08:23:37 - INFO - knnlm - Added 16000000 tokens so far
+07/14/2025 08:23:37 - INFO - knnlm - Writing Index 16000000
+07/14/2025 08:31:19 - INFO - knnlm - Added 17000000 tokens so far
+07/14/2025 08:31:19 - INFO - knnlm - Writing Index 17000000
+07/14/2025 08:38:33 - INFO - knnlm - Added 18000000 tokens so far
+07/14/2025 08:38:33 - INFO - knnlm - Writing Index 18000000
+07/14/2025 08:45:39 - INFO - knnlm - Added 19000000 tokens so far
+07/14/2025 08:45:39 - INFO - knnlm - Writing Index 19000000
+07/14/2025 08:53:06 - INFO - knnlm - Added 20000000 tokens so far
+07/14/2025 08:53:06 - INFO - knnlm - Writing Index 20000000
+07/14/2025 09:00:23 - INFO - knnlm - Added 21000000 tokens so far
+07/14/2025 09:00:23 - INFO - knnlm - Writing Index 21000000
+07/14/2025 09:07:38 - INFO - knnlm - Added 22000000 tokens so far
+07/14/2025 09:07:38 - INFO - knnlm - Writing Index 22000000
+07/14/2025 09:14:45 - INFO - knnlm - Added 23000000 tokens so far
+07/14/2025 09:14:45 - INFO - knnlm - Writing Index 23000000
+07/14/2025 09:22:08 - INFO - knnlm - Added 24000000 tokens so far
+07/14/2025 09:22:08 - INFO - knnlm - Writing Index 24000000
+07/14/2025 09:29:23 - INFO - knnlm - Added 25000000 tokens so far
+07/14/2025 09:29:23 - INFO - knnlm - Writing Index 25000000
+07/14/2025 09:36:29 - INFO - knnlm - Added 26000000 tokens so far
+07/14/2025 09:36:29 - INFO - knnlm - Writing Index 26000000
+07/14/2025 09:43:59 - INFO - knnlm - Added 27000000 tokens so far
+07/14/2025 09:43:59 - INFO - knnlm - Writing Index 27000000
+07/14/2025 09:51:11 - INFO - knnlm - Added 28000000 tokens so far
+07/14/2025 09:51:11 - INFO - knnlm - Writing Index 28000000
+07/14/2025 09:58:35 - INFO - knnlm - Added 29000000 tokens so far
+07/14/2025 09:58:35 - INFO - knnlm - Writing Index 29000000
+07/14/2025 10:05:57 - INFO - knnlm - Added 30000000 tokens so far
+07/14/2025 10:05:57 - INFO - knnlm - Writing Index 30000000
+07/14/2025 10:13:51 - INFO - knnlm - Added 31000000 tokens so far
+07/14/2025 10:13:51 - INFO - knnlm - Writing Index 31000000
+07/14/2025 10:21:17 - INFO - knnlm - Added 32000000 tokens so far
+07/14/2025 10:21:17 - INFO - knnlm - Writing Index 32000000
+07/14/2025 10:28:28 - INFO - knnlm - Added 33000000 tokens so far
+07/14/2025 10:28:28 - INFO - knnlm - Writing Index 33000000
+07/14/2025 10:35:53 - INFO - knnlm - Added 34000000 tokens so far
+07/14/2025 10:35:53 - INFO - knnlm - Writing Index 34000000
+07/14/2025 10:43:07 - INFO - knnlm - Added 35000000 tokens so far
+07/14/2025 10:43:07 - INFO - knnlm - Writing Index 35000000
+07/14/2025 10:50:23 - INFO - knnlm - Added 36000000 tokens so far
+07/14/2025 10:50:23 - INFO - knnlm - Writing Index 36000000
+07/14/2025 10:57:40 - INFO - knnlm - Added 37000000 tokens so far
+07/14/2025 10:57:40 - INFO - knnlm - Writing Index 37000000
+07/14/2025 11:04:50 - INFO - knnlm - Added 38000000 tokens so far
+07/14/2025 11:04:50 - INFO - knnlm - Writing Index 38000000
+07/14/2025 11:11:59 - INFO - knnlm - Added 39000000 tokens so far
+07/14/2025 11:11:59 - INFO - knnlm - Writing Index 39000000
+07/14/2025 11:19:14 - INFO - knnlm - Added 40000000 tokens so far
+07/14/2025 11:19:14 - INFO - knnlm - Writing Index 40000000
+07/14/2025 11:26:42 - INFO - knnlm - Added 41000000 tokens so far
+07/14/2025 11:26:42 - INFO - knnlm - Writing Index 41000000
+07/14/2025 11:34:26 - INFO - knnlm - Added 42000000 tokens so far
+07/14/2025 11:34:26 - INFO - knnlm - Writing Index 42000000
+07/14/2025 11:41:48 - INFO - knnlm - Added 43000000 tokens so far
+07/14/2025 11:41:48 - INFO - knnlm - Writing Index 43000000
+07/14/2025 11:49:02 - INFO - knnlm - Added 44000000 tokens so far
+07/14/2025 11:49:02 - INFO - knnlm - Writing Index 44000000
+07/14/2025 11:56:15 - INFO - knnlm - Added 45000000 tokens so far
+07/14/2025 11:56:15 - INFO - knnlm - Writing Index 45000000
+07/14/2025 12:03:48 - INFO - knnlm - Added 46000000 tokens so far
+07/14/2025 12:03:48 - INFO - knnlm - Writing Index 46000000
+07/14/2025 12:10:58 - INFO - knnlm - Added 47000000 tokens so far
+07/14/2025 12:10:58 - INFO - knnlm - Writing Index 47000000
+07/14/2025 12:18:38 - INFO - knnlm - Added 48000000 tokens so far
+07/14/2025 12:18:38 - INFO - knnlm - Writing Index 48000000
+07/14/2025 12:25:55 - INFO - knnlm - Added 49000000 tokens so far
+07/14/2025 12:25:55 - INFO - knnlm - Writing Index 49000000
+07/14/2025 12:33:20 - INFO - knnlm - Added 50000000 tokens so far
+07/14/2025 12:33:20 - INFO - knnlm - Writing Index 50000000
+07/14/2025 12:40:32 - INFO - knnlm - Added 51000000 tokens so far
+07/14/2025 12:40:32 - INFO - knnlm - Writing Index 51000000
+07/14/2025 12:47:49 - INFO - knnlm - Added 52000000 tokens so far
+07/14/2025 12:47:49 - INFO - knnlm - Writing Index 52000000
+07/14/2025 12:55:54 - INFO - knnlm - Added 53000000 tokens so far
+07/14/2025 12:55:54 - INFO - knnlm - Writing Index 53000000
+07/14/2025 13:03:44 - INFO - knnlm - Added 54000000 tokens so far
+07/14/2025 13:03:44 - INFO - knnlm - Writing Index 54000000
+07/14/2025 13:11:17 - INFO - knnlm - Added 55000000 tokens so far
+07/14/2025 13:11:17 - INFO - knnlm - Writing Index 55000000
+07/14/2025 13:18:35 - INFO - knnlm - Added 56000000 tokens so far
+07/14/2025 13:18:35 - INFO - knnlm - Writing Index 56000000
+07/14/2025 13:26:02 - INFO - knnlm - Added 57000000 tokens so far
+07/14/2025 13:26:02 - INFO - knnlm - Writing Index 57000000
+07/14/2025 13:33:38 - INFO - knnlm - Added 58000000 tokens so far
+07/14/2025 13:33:38 - INFO - knnlm - Writing Index 58000000
+07/14/2025 13:40:58 - INFO - knnlm - Added 59000000 tokens so far
+07/14/2025 13:40:58 - INFO - knnlm - Writing Index 59000000
+07/14/2025 13:48:28 - INFO - knnlm - Added 60000000 tokens so far
+07/14/2025 13:48:28 - INFO - knnlm - Writing Index 60000000
+07/14/2025 13:56:07 - INFO - knnlm - Added 61000000 tokens so far
+07/14/2025 13:56:07 - INFO - knnlm - Writing Index 61000000
+07/14/2025 14:04:01 - INFO - knnlm - Added 62000000 tokens so far
+07/14/2025 14:04:01 - INFO - knnlm - Writing Index 62000000
+07/14/2025 14:11:16 - INFO - knnlm - Added 63000000 tokens so far
+07/14/2025 14:11:16 - INFO - knnlm - Writing Index 63000000
+07/14/2025 14:18:46 - INFO - knnlm - Added 64000000 tokens so far
+07/14/2025 14:18:46 - INFO - knnlm - Writing Index 64000000
+07/14/2025 14:26:11 - INFO - knnlm - Added 65000000 tokens so far
+07/14/2025 14:26:11 - INFO - knnlm - Writing Index 65000000
+07/14/2025 14:33:51 - INFO - knnlm - Added 66000000 tokens so far
+07/14/2025 14:33:51 - INFO - knnlm - Writing Index 66000000
+07/14/2025 14:41:25 - INFO - knnlm - Added 67000000 tokens so far
+07/14/2025 14:41:25 - INFO - knnlm - Writing Index 67000000
+07/14/2025 14:48:46 - INFO - knnlm - Added 68000000 tokens so far
+07/14/2025 14:48:46 - INFO - knnlm - Writing Index 68000000
+07/14/2025 14:56:32 - INFO - knnlm - Added 69000000 tokens so far
+07/14/2025 14:56:32 - INFO - knnlm - Writing Index 69000000
+07/14/2025 15:03:45 - INFO - knnlm - Added 70000000 tokens so far
+07/14/2025 15:03:45 - INFO - knnlm - Writing Index 70000000
+07/14/2025 15:11:11 - INFO - knnlm - Added 71000000 tokens so far
+07/14/2025 15:11:11 - INFO - knnlm - Writing Index 71000000
+07/14/2025 15:18:36 - INFO - knnlm - Added 72000000 tokens so far
+07/14/2025 15:18:36 - INFO - knnlm - Writing Index 72000000
+07/14/2025 15:26:00 - INFO - knnlm - Added 73000000 tokens so far
+07/14/2025 15:26:00 - INFO - knnlm - Writing Index 73000000
+07/14/2025 15:33:23 - INFO - knnlm - Added 74000000 tokens so far
+07/14/2025 15:33:23 - INFO - knnlm - Writing Index 74000000
+07/14/2025 15:40:36 - INFO - knnlm - Added 75000000 tokens so far
+07/14/2025 15:40:36 - INFO - knnlm - Writing Index 75000000
+07/14/2025 15:47:58 - INFO - knnlm - Added 76000000 tokens so far
+07/14/2025 15:47:58 - INFO - knnlm - Writing Index 76000000
+07/14/2025 15:55:29 - INFO - knnlm - Added 77000000 tokens so far
+07/14/2025 15:55:29 - INFO - knnlm - Writing Index 77000000
+07/14/2025 16:02:44 - INFO - knnlm - Added 78000000 tokens so far
+07/14/2025 16:02:44 - INFO - knnlm - Writing Index 78000000
+07/14/2025 16:10:06 - INFO - knnlm - Added 79000000 tokens so far
+07/14/2025 16:10:06 - INFO - knnlm - Writing Index 79000000
+07/14/2025 16:17:28 - INFO - knnlm - Added 80000000 tokens so far
+07/14/2025 16:17:28 - INFO - knnlm - Writing Index 80000000
+07/14/2025 16:24:45 - INFO - knnlm - Added 81000000 tokens so far
+07/14/2025 16:24:45 - INFO - knnlm - Writing Index 81000000
+07/14/2025 16:32:04 - INFO - knnlm - Added 82000000 tokens so far
+07/14/2025 16:32:04 - INFO - knnlm - Writing Index 82000000
+07/14/2025 16:39:28 - INFO - knnlm - Added 83000000 tokens so far
+07/14/2025 16:39:28 - INFO - knnlm - Writing Index 83000000
+07/14/2025 16:47:00 - INFO - knnlm - Added 84000000 tokens so far
+07/14/2025 16:47:00 - INFO - knnlm - Writing Index 84000000
+07/14/2025 16:54:36 - INFO - knnlm - Added 85000000 tokens so far
+07/14/2025 16:54:36 - INFO - knnlm - Writing Index 85000000
+07/14/2025 17:02:24 - INFO - knnlm - Added 86000000 tokens so far
+07/14/2025 17:02:24 - INFO - knnlm - Writing Index 86000000
+07/14/2025 17:09:48 - INFO - knnlm - Added 87000000 tokens so far
+07/14/2025 17:09:48 - INFO - knnlm - Writing Index 87000000
+07/14/2025 17:17:18 - INFO - knnlm - Added 88000000 tokens so far
+07/14/2025 17:17:18 - INFO - knnlm - Writing Index 88000000
+07/14/2025 17:24:32 - INFO - knnlm - Added 89000000 tokens so far
+07/14/2025 17:24:32 - INFO - knnlm - Writing Index 89000000
+07/14/2025 17:31:56 - INFO - knnlm - Added 90000000 tokens so far
+07/14/2025 17:31:56 - INFO - knnlm - Writing Index 90000000
+07/14/2025 17:39:39 - INFO - knnlm - Added 91000000 tokens so far
+07/14/2025 17:39:39 - INFO - knnlm - Writing Index 91000000
+07/14/2025 17:46:53 - INFO - knnlm - Added 92000000 tokens so far
+07/14/2025 17:46:53 - INFO - knnlm - Writing Index 92000000
+07/14/2025 17:54:08 - INFO - knnlm - Added 93000000 tokens so far
+07/14/2025 17:54:08 - INFO - knnlm - Writing Index 93000000
+07/14/2025 18:01:44 - INFO - knnlm - Added 94000000 tokens so far
+07/14/2025 18:01:44 - INFO - knnlm - Writing Index 94000000
+07/14/2025 18:09:17 - INFO - knnlm - Added 95000000 tokens so far
+07/14/2025 18:09:17 - INFO - knnlm - Writing Index 95000000
+07/14/2025 18:16:43 - INFO - knnlm - Added 96000000 tokens so far
+07/14/2025 18:16:43 - INFO - knnlm - Writing Index 96000000
+07/14/2025 18:24:11 - INFO - knnlm - Added 97000000 tokens so far
+07/14/2025 18:24:11 - INFO - knnlm - Writing Index 97000000
+07/14/2025 18:31:28 - INFO - knnlm - Added 98000000 tokens so far
+07/14/2025 18:31:28 - INFO - knnlm - Writing Index 98000000
+07/14/2025 18:38:50 - INFO - knnlm - Added 99000000 tokens so far
+07/14/2025 18:38:50 - INFO - knnlm - Writing Index 99000000
+07/14/2025 18:46:48 - INFO - knnlm - Added 100000000 tokens so far
+07/14/2025 18:46:48 - INFO - knnlm - Writing Index 100000000
+07/14/2025 18:54:33 - INFO - knnlm - Added 101000000 tokens so far
+07/14/2025 18:54:33 - INFO - knnlm - Writing Index 101000000
+07/14/2025 19:01:53 - INFO - knnlm - Added 102000000 tokens so far
+07/14/2025 19:01:53 - INFO - knnlm - Writing Index 102000000
+07/14/2025 19:09:15 - INFO - knnlm - Added 103000000 tokens so far
+07/14/2025 19:09:15 - INFO - knnlm - Writing Index 103000000
+07/14/2025 19:16:36 - INFO - knnlm - Added 104000000 tokens so far
+07/14/2025 19:16:36 - INFO - knnlm - Writing Index 104000000
+07/14/2025 19:24:54 - INFO - knnlm - Added 105000000 tokens so far
+07/14/2025 19:24:54 - INFO - knnlm - Writing Index 105000000
+07/14/2025 19:32:43 - INFO - knnlm - Added 106000000 tokens so far
+07/14/2025 19:32:43 - INFO - knnlm - Writing Index 106000000
+07/14/2025 19:40:28 - INFO - knnlm - Added 107000000 tokens so far
+07/14/2025 19:40:28 - INFO - knnlm - Writing Index 107000000
+07/14/2025 19:47:50 - INFO - knnlm - Added 108000000 tokens so far
+07/14/2025 19:47:50 - INFO - knnlm - Writing Index 108000000
+07/14/2025 19:55:12 - INFO - knnlm - Added 109000000 tokens so far
+07/14/2025 19:55:12 - INFO - knnlm - Writing Index 109000000
+07/14/2025 20:02:53 - INFO - knnlm - Added 110000000 tokens so far
+07/14/2025 20:02:53 - INFO - knnlm - Writing Index 110000000
+07/14/2025 20:10:21 - INFO - knnlm - Added 111000000 tokens so far
+07/14/2025 20:10:21 - INFO - knnlm - Writing Index 111000000
+07/14/2025 20:17:58 - INFO - knnlm - Added 112000000 tokens so far
+07/14/2025 20:17:58 - INFO - knnlm - Writing Index 112000000
+07/14/2025 20:25:39 - INFO - knnlm - Added 113000000 tokens so far
+07/14/2025 20:25:39 - INFO - knnlm - Writing Index 113000000
+07/14/2025 20:33:08 - INFO - knnlm - Added 114000000 tokens so far
+07/14/2025 20:33:08 - INFO - knnlm - Writing Index 114000000
+07/14/2025 20:40:45 - INFO - knnlm - Added 115000000 tokens so far
+07/14/2025 20:40:45 - INFO - knnlm - Writing Index 115000000
+07/14/2025 20:48:57 - INFO - knnlm - Added 116000000 tokens so far
+07/14/2025 20:48:57 - INFO - knnlm - Writing Index 116000000
+07/14/2025 20:56:29 - INFO - knnlm - Added 117000000 tokens so far
+07/14/2025 20:56:29 - INFO - knnlm - Writing Index 117000000
+07/14/2025 21:04:09 - INFO - knnlm - Added 118000000 tokens so far
+07/14/2025 21:04:09 - INFO - knnlm - Writing Index 118000000
+07/14/2025 21:12:09 - INFO - knnlm - Added 119000000 tokens so far
+07/14/2025 21:12:09 - INFO - knnlm - Writing Index 119000000
+07/14/2025 21:19:54 - INFO - knnlm - Added 120000000 tokens so far
+07/14/2025 21:19:54 - INFO - knnlm - Writing Index 120000000
+07/14/2025 21:27:46 - INFO - knnlm - Added 121000000 tokens so far
+07/14/2025 21:27:46 - INFO - knnlm - Writing Index 121000000
+07/14/2025 21:29:26 - INFO - knnlm - Added 122000000 tokens so far
+07/14/2025 21:29:26 - INFO - knnlm - Writing Index 122000000
+07/14/2025 21:29:41 - INFO - knnlm - Adding total 122000000 keys
+07/14/2025 21:29:41 - INFO - knnlm - Adding took 54203.532979249954 s
+07/14/2025 21:29:41 - INFO - knnlm - Writing Index to ./dstore_llama3.2_1B/index_llama_121198980_2048.indexed
+07/14/2025 21:29:53 - INFO - knnlm - Writing index took 12.648303031921387 s
