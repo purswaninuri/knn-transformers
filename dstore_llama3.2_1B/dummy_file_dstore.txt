@@ -1,0 +1,1 @@
+heya - the keys.npy, vals.npy and .indexed files are in this folder but too huge to push to github. 

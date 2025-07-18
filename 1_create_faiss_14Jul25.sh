@@ -5,7 +5,7 @@ source $(conda info --base)/etc/profile.d/conda.sh
 conda activate neubig
 
 # 🎯 Set CUDA device
-export CUDA_VISIBLE_DEVICES=7
+export CUDA_VISIBLE_DEVICES=1,3,5,7
 
 # 📁 Model and output setup
 MODEL=meta-llama/Llama-3.2-1B
@@ -16,7 +16,7 @@ LOG_DIR=./logs
 
 # 📐 Detect or set dstore size (this must match number of rows saved earlier)
 echo "[Info] Detecting datastore size..."
-DSTORE_SIZE=121198980  # <-- Update this to match actual rows in your .npy
+DSTORE_SIZE=120965366  # <-- Update this to match actual rows in your .npy
 echo "[Info] Detected dstore size: ${DSTORE_SIZE}"
 
 # 📦 Build FAISS index

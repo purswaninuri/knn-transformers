@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 # 🧠 Activate conda environment
@@ -25,19 +26,17 @@ mkdir -p ${DSTORE_DIR}
 mkdir -p ${CHECKPOINT_DIR}
 mkdir -p ${LOG_DIR}
 
-# 🚀 Step 1: Save kNN datastore over a subset of training data
-echo "[Step 1] Saving kNN datastore (subset of training set)..."
+# 🚀 Step 1: Save kNN datastore (keys and vals)
+echo "[Step 1] Saving kNN datastore..."
 nohup python -u /data/nuri/knn-transformers/run_clm.py \
   --model_name_or_path ${MODEL} \
   --dataset_name wikitext \
   --dataset_config_name wikitext-103-raw-v1 \
+  --do_eval \
   --eval_subset train \
-  --max_eval_samples 10000 \
-  --block_size 512 \
-  --dstore_dir ${DSTORE_DIR} \
   --output_dir ${CHECKPOINT_DIR} \
+  --dstore_dir ${DSTORE_DIR} \
   --save_knnlm_dstore \
-  --fp16 \
   > ${LOG_DIR}/save_knn_${MODEL_ID}.log 2>&1
 
 # ✅ Wait for completion
